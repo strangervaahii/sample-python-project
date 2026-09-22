@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "welcome-screen"
+version = "1.0.0"
+description = "A modern Python sample Welcome Screen application"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+    { name = "WelcomeScreen Developer" }
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+]
+
+[project.scripts]
+welcome-screen = "welcome_screen.gui:run_gui"
+welcome-screen-cli = "welcome_screen.cli:run_cli"
+
+[tool.setuptools.packages.find]
+where = ["src"]

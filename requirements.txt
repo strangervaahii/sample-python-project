@@ -1,0 +1,3 @@
+# Core application uses Python 3 standard library (no external dependencies required).
+# Optional development dependencies:
+pytest>=8.0.0
